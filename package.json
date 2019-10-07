@@ -1,5 +1,5 @@
 {
-  "name": "myApp",
+  "name": "factoria-tech",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -37,5 +37,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "description": "An Ionic project"
+  "description": "Aplicacion Demo corporativa de FactoriaTECH"
 }

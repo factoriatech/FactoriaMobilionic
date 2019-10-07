@@ -31,7 +31,6 @@ const Tab3Page: React.FC = () => {
   const [email,setEmail] = useState('');
   const [asunto,setAsunto] = useState('');
   const [mensaje,setMensaje] = useState('');
-  const [alertar,setAlertar] = useState('');
   const [showToast, setShowToast] = useState(false);
   const handleForm = (e:any) => {
     e.preventDefault();
@@ -79,7 +78,6 @@ const Tab3Page: React.FC = () => {
           </IonItem>
           <IonButton type="submit" color="primary" expand="block" >Enviar</IonButton>
         </form>
-        <IonLabel color="danger">{alertar}</IonLabel>
         <IonToast
           isOpen={showToast}
           onDidDismiss={() => setShowToast(false)}
