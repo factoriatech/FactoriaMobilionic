@@ -51,7 +51,8 @@ const Details: React.FC = (props:any) => {
         <IonCardHeader>
           <IonCardTitle>{title}</IonCardTitle>
         </IonCardHeader>
-        <IonCardContent><img src={featuredImage.sourceUrl} alt="" /><br />{content}</IonCardContent>
+        <IonCardContent><img src={featuredImage.sourceUrl} alt="" /><br /> <div dangerouslySetInnerHTML={{__html : content}}>
+              </div></IonCardContent>
         </IonCard>
       </IonContent>
     </IonPage>

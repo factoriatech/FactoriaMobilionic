@@ -1,0 +1,7 @@
+{
+  "appId": "com.factoriatech.democorporateapp",
+  "appName": "FactoriaTECH",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

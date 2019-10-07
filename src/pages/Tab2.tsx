@@ -53,7 +53,8 @@ const Tab2: React.FC = () => {
               </IonCardTitle>
             </IonCardHeader>
             <IonCardContent>
-            <div>{p.excerpt} <Link to={url} >Ver más</Link></div>
+            <div> <div dangerouslySetInnerHTML={{__html : p.excerpt}}>
+              </div> <Link to={url} >Ver más</Link></div>
             </IonCardContent>
           </IonCard>
         })}

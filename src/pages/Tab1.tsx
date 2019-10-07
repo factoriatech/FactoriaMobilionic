@@ -10,6 +10,8 @@ import {
   IonToolbar
 } from '@ionic/react';
 import React from 'react';
+
+
 import './Tab1.css';
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
@@ -47,9 +49,8 @@ const Tab1: React.FC = () => {
               <IonCardTitle>{s.title}</IonCardTitle>
             </IonCardHeader>
             <IonCardContent>
-              <p>
-                {s.content}
-              </p>
+              <div dangerouslySetInnerHTML={{__html : s.content}}>
+              </div>
             </IonCardContent>
           </IonCard>
           })
